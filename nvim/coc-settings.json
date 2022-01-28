@@ -1,0 +1,84 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "prisma",
+    "css",
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "typescriptreact",
+    "json",
+    "go",
+    "mysql",
+    "cpp",
+    "php",
+    "python",
+    "html",
+    "typescript",
+    "jsx",
+    "graphql",
+    "vim",
+    "scss"
+  ],
+
+  // GraphQL
+  "languageserver": {
+    "graphql": {
+      "command": "graphql-lsp",
+      "args": ["server", "-m", "stream"],
+      // customize filetypes to your needs
+      "filetypes": [
+        "typescript",
+        "typescriptreact",
+        "graphql",
+        "javascript",
+        "javascriptreact"
+      ]
+    }
+  },
+
+  // Tailwind CSS
+  "tailwindCSS.headwind.classRegex": {
+    "html": "\\bclass\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\']",
+    "javascript": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)",
+    "javascriptreact": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)",
+    "typescriptreact": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)"
+  },
+
+  // prettier
+  "prettier.printWidth": 80,
+
+  // coc-eslint
+  "eslint.autoFixOnSave": true,
+
+  "suggest.highPrioritySourceLimit": 100,
+  "suggest.lowPrioritySourceLimit": 98,
+  "snippets.priority": 99,
+  "tabnine.priority": 99,
+
+  // emmet
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  // html config
+  "html.enable": true,
+  "html.trace.server": "messages",
+  "html.format.enable": true,
+  "html.validate.scripts": true,
+  "html.validate.styles": true,
+  "html.autoClosingTags": true,
+
+  // css config
+  "css.enable": true,
+  "css.trace.server": "off",
+  "css.completion.triggerPropertyValueCompletion": true,
+  "css.completion.completePropertyWithSemicolon": true,
+  "css.validate": true,
+  "css.colorDecorators.enable": true,
+
+  // python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.pythonPath": "/usr/bin/python"
+}
